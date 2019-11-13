@@ -1,0 +1,63 @@
+﻿#Team{
+    background-color:#ffffff;
+    margin-top:0;
+    overflow:hidden;
+}
+
+
+.content {
+    width: 1670px;
+    height: 900px;
+    margin: auto;
+    text-align: center;
+    top:280px;
+    
+}
+
+
+#contenttitle {
+    padding-top:200px;
+    width:100px;
+    height:31px;
+    position:relative;
+   
+    
+}
+#contenttitle img{
+    margin:auto;
+}
+#Teambox {
+   
+    padding-top:140px;
+    width: 1670px;
+    height: 200px;
+    display: block;
+    
+}
+
+.profile {
+    margin-left: 80px;
+    margin-right: 80px;
+    float: left;
+}
+
+.profileImg{
+    width:257px;
+    height:257px;
+   
+}
+
+.name{
+    padding-top:20px;
+}
+
+
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    src: url('../fonts/NanumBarunGothic.ttf') format('truetype');
+}
+.Email {
+    opacity:0.5;
+    font-family: 'NanumBarunGothic';
+}

@@ -1,0 +1,325 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>용산가자</title>
+    <link rel="stylesheet" href="./css/normalize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/backVideo.css"><!--home backVideo-->
+    <link rel="stylesheet" href="./css/vid.css"><!--Video-->
+    <link rel="stylesheet" href="./css/synopsis.css"><!--synopsis-->
+    <link rel="stylesheet" type="text/css" href="./css/explanation.css"><!--explanation-->
+    <link rel="stylesheet" type="text/css" href="./css/review.css"><!--Review-->
+    <link rel="stylesheet" type="text/css" href="./css/slogan.css"><!--slogan-->
+    <link rel="stylesheet" type="text/css" href="./css/Team.css"><!--team-->
+</head>
+<body>
+    <!-- partial:index.partial.html -->
+
+    <a id="scrollTop" href="#home"><img src="./img/top.png"/></a>
+
+    <nav class="main-nav">
+        <div id="logo">
+            <ul class="mainNav ">
+                <li class="active "><a href="#home"><img id="longimg" src='./img/logo.png' /></a></li>
+            </ul>
+        </div>
+        <ul class="mainNav" id="navlist">
+
+            <li><a href="#videoLi">소개영상</a></li>
+            <li><a href="#synopsis">배경</a></li>
+            <li><a href="#explanationLi">기능</a></li>
+            <li><a href="#ReviewLi">후기</a></li>
+            <li><a href="#slogan">슬로건</a></li>
+            <li><a href="#Team">팀</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+    
+        <video playsinline autoplay muted loop id="backvid">
+            <source src="./vid/back.mp4" type="video/mp4">
+        </video>
+        <div id="Home">
+            <img id="homelogo" src="./img/Homelogo.png" />
+        </div>
+
+    </section>
+
+    <section id="videoLi" data-sr>
+
+        <div id="video">
+            <div id="inbox">
+                <img id="videotitle" src="./img/video_2.png" />
+                <div> </div>
+                <!--<span>영상</span>-->
+                <div id="video_main"> <video src="./vid/vid.mp4" controls></video></div>
+            </div>
+
+        </div>
+
+
+    </section>
+    <section id="synopsis">
+        <div id="synopsisBox">
+            <div class="syInBox">
+                <img src="./img/synopsis/title.png"/>
+                <p><img id="line" src="./img/synopsis/line1.png" /></p>
+                <p><img src="./img/synopsis/serve.png" /></p>
+                <div id="Graph1">
+                    <img src="./img/synopsis/Graph_1.gif" />
+                    <p id="soure">자료 출처  :  http://www.ciokorea.com/t/1139/25461/38939#csidx9470389eb17ef928a20570988172ab1
+                    </p>
+                </div>
+
+            </div>
+            <div class="syInBox" >
+                <div>
+                <img id="Graph2" src="./img/synopsis/Graph_2.gif" />
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section id="explanationLi">
+        <div id="explanation">
+
+            <!--앱 해당화면-->
+            <div class="container">
+                <div id="container_box">
+                    <div id="firstContainer">
+                        <img src="./img/explanation/1_3_1.png" />
+                        <img src="./img/explanation/1_3_2.gif" />
+                     </div>
+                    <!--기능과 설명 -->
+                    <div id="btn1" class="tab-content">
+                        <img src="./img/explanation/1_3_1.png" />
+                        <img src="./img/explanation/1_3_2.gif" />
+                        <!--    <div class="container-img"><img src="./img/explanation/1p_1.png" /></div>-->
+                        <!-- <div class="container-img"><img src="./img/explanation/1p_1.png" /></div>-->
+                    </div>
+                    <!--비교하기-->
+                    <div id="btn2" class="tab-content">
+                        <img src="./img/explanation/2_3_1.png" />
+                        <img src="./img/explanation/2_3_2.gif" />                        <!--  <div class="container-img"><img src="./img/re/Artboard 3_2.png" /></div>-->
+                        <!--  <div class="container-img"><img src="./img/explanation/2p_1.png" /></div>-->
+                    </div>
+                    <!--길찾기-->
+                    <div id="btn3" class="tab-content">
+                        <img src="./img/explanation/3_3_1.png" />
+                        <img src="./img/explanation/3_3_2.gif" />
+                        <!--<div class="container-img"><img src="./img/re/Artboard 4_2.png" /></div>-->
+                        <!-- <div class="container-img"><img src="./img/explanation/3p_1.png" /></div>-->
+                    </div>
+                </div>
+
+
+                <!--기능과 설명 -->
+                <div class="btn_tap">
+                    <div class="btn_box">
+                        <div>
+                            <!--견적보기-->
+                            <button class="tap_links active" onclick="buttonBTN(event,'btn1' )">
+                                <img id="icon1" src="./img/explanation/icon2.png" />
+                                <!--  onmouseover="this.src='./img/explanation/icon1.png'" onmouseout="this.src='./img/explanation/icon2.png'" -->
+                            </button>
+                        </div>
+                        <div>
+                            <!--비교하기-->
+                            <button class="tap_links" onclick="buttonBTN(event,'btn2' )">
+                                <img id="icon2" src="./img/explanation/icon4.png" />
+                                <!-- onmouseover="this.src='./img/explanation/icon3.png'" onmouseout="this.src='./img/explanation/icon4.png'"-->
+                            </button>
+                        </div>
+                        <div>
+                            <!--길찾기-->
+                            <button class="tap_links" onclick="buttonBTN(event,'btn3' )">
+                                <img id="icon3" src="./img/explanation/icon6.png" />
+                                <!--onmouseover="this.src='./img/explanation/icon5.png'" onmouseout="this.src='./img/explanation/icon6.png'"-->
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+    </section>
+    <section id="ReviewLi">
+
+        <div id="review">
+
+            <div id="reviewtitle">
+            </div>
+
+            <div id="reviewbox">
+
+
+                <div id="rev_1">
+                    <div class="demo">
+                        <figure class="imghvr-blur">
+                        
+                            <img src="./img/Review/ReviewText1_1.png">
+                            <figcaption>
+                            </figcaption><a href="javascript:;"></a>
+                        </figure>
+                    </div>
+
+
+                </div>
+
+                <div id="rev_2">
+                    <div class="demo">
+                        <figure class="imghvr2-blur">
+                        
+                            <img src="./img/Review/ReviewText2_1.png">
+                            <figcaption>
+                            </figcaption><a href="javascript:;"></a>
+                        </figure>
+                    </div>
+                </div>
+
+                <div id="rev_3">
+                    <div class="demo">
+                        <figure class="imghvr3-blur">
+                        
+                            <img src="./img/Review/ReviewText3_1.png">
+                            <figcaption>
+                            </figcaption><a href="javascript:;"></a>
+                        </figure>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <section id="slogan">
+        <div id="hideme"><img src="./img/slogan/design.png" /></div>
+    </section>
+    <section id="Team">
+        <div class="content">
+
+            <img id="contenttitle" src="./img/team/team_2.png" />
+
+            <div id="Teambox">
+                <div class="profile">
+                    <img class="profileImg" src="./img/team/profile/1_1.png" />
+                    <!--  onmouseover="this.src='./img/team/profile/1_1.png'" onmouseout="this.src='./img/team/profile/1_2.png'"-->
+                    <br />
+                    
+                    <p><img class="name" src="./img/team/Team1_1.png" /></p>
+                    <p><img class="ex" src="./img/team/Team1_2.png" /></p>
+                    <p><img src="./img/team/Team1_3.png" /></p>
+                    <p class="Email">mrbernstein7777@gmail.com</p>
+                </div>
+                <div class="profile">
+                    <img class="profileImg" src="./img/team/profile/2_1.png" />
+                    <!-- onmouseover="this.src='./img/team/profile/2_1.png'" onmouseout="this.src='./img/team/profile/2_2.png'"-->
+                    <br />
+
+                    <p><img class="name" src="./img/team/Team2_1.png" /></p>
+                    <p><img class="ex" src="./img/team/Team2_2.png" /></p>
+                    <p><img src="./img/team/Team2_3.png" /></p>
+                    <p class="Email">dnwls8363@naver.com</p>
+
+                </div>
+                <div class="profile">
+                    <img class="profileImg" src="./img/team/profile/3_1.png" />
+                    <!--  onmouseover="this.src='./img/team/profile/3_1.png'" onmouseout="this.src='./img/team/profile/3_2.png'"-->
+                    <br />
+                  
+                    <p><img class="name" src="./img/team/Team3_1.png" /></p>
+                    <p><img class="ex" src="./img/team/Team4_2.png" /></p>
+                    <p><img src="./img/team/Team3_3.png" /></p>
+                    <p class="Email">mouse76734@gmail.com</p>
+                </div>
+                <div class="profile">
+                    <img class="profileImg" src="./img/team/profile/4_1.png"  />
+                      <!--   onmouseover="this.src='./img/team/profile/4_1.png'" onmouseout="this.src='./img/team/profile/4_2.png'"-->
+                    <br />
+                    <p> <img class="name" src="./img/team/Team4_1.png" /></p>
+                    <p> <img class="ex" src="./img/team/Team4_2.png" /></p>
+                    <p><img src="./img/team/Team4_3.png" /></p>
+                    <p class="Email">pwodl@naver.com</p>
+                </div>
+                <div class="profile">
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- partial -->
+    <script src='./js/libs/jquery/jquery-3.4.1.min.js'></script>
+    <script src="./js/script.js" type="text/javascript"></script>
+
+    <script src="./js/script_2.js" type="text/javascript"></script>
+
+
+    <script>
+        //스크롤 탑
+        $(function () { 
+            
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 250) {
+                    
+                    $('#scrollTop').fadeIn();
+                } else { $('#scrollTop').fadeOut(); }
+            }); 
+            $("#scrollTop").click(function () {
+                $('html, body').animate({
+                    scrollTop: 0
+                   
+                }, 400);
+                
+                return false; }); });
+
+          
+    </script>
+
+    <script>
+        //Home back vid설정
+        var elem = document.getElementById("backvid");
+        if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+        } else if (elem.mozRequestFullScreen) {
+            elem.mozRequestFullScreen();
+        } else if (elem.webkitRequestFullscreen) {
+            elem.webkitRequestFullscreen();
+        }
+
+    </script>
+
+    <script src="./js/Tabscript.js" type="text/javascript"></script>
+    <script>
+        function buttonBTN(evt, btnName) {
+
+            var i, tabcontent, tablinks;
+
+            tabcontent = document.getElementsByClassName("tab-content");//내용
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tap_links");//버튼
+
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(btnName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+    <script src="./js/FadeIn.js" type="text/javascript"></script>
+
+</body>
+</html>

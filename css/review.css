@@ -1,0 +1,298 @@
+﻿#ReviewLi {
+    background-image: url("../img/Review/Review_back_2.png");
+    overflow:hidden;
+}
+
+
+#review {
+    width: 1600px;
+    height: 437px;
+    margin: auto;
+    
+    
+    padding-top:240px;
+}
+
+#reviewtitle {
+    float: left;
+    margin-bottom: 300px;
+    width: 231px;
+    height: 437px;
+    background-image: url("../img/Review/review_titleE.png");
+}
+
+
+
+
+/*여기서부터 수정부분*/
+#reviewbox {
+    /*background: #333; 표시상자*/
+    width: 1600px;
+    height: 440px;
+    position: relative;
+   
+    /* 위치 설정을 고정*/
+    /*background-color: slateblue; 박스위치 판별하기위한 컬러 */
+}
+/*이 박스는 리뷰1 2 3 , 리뷰글 1 2 3 가 들어갈 div 박스로 쓸예정* 크기는 원래 들어갔던 Review.png 간격을 기준으로*/
+
+
+#rev_1 {
+    width: 401px;
+    height: 440px;
+    float: left;
+    margin-left:30px;
+    margin-right: 50px;
+    /*가로 가로 간격 조절*/
+    /*background-color: beige; 박스위치 판별하기위한 컬러*/
+}
+
+#rev_2 {
+    width: 401px;
+    height: 440px;
+    float: left;
+    margin-right: 50px;
+    /*가로 가로 간격 조절*/
+    /*background-color: beige; 박스위치 판별하기위한 컬러*/
+}
+
+#rev_3
+{
+ /*참다참다 안되서 절대좌표로 고정*/
+width: 401px;
+height: 440px;
+float: left;
+left:-10px;/*가로 간격 조절*/
+/*background-color: beige; 박스위치 판별하기위한 컬러*/
+}
+
+
+
+/*어떤이유로 3개 배열이 된건지 모르겠지만 어쨌든 되었음*/
+
+/* div id="rev_1" 리뷰 호버 기능 */
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);@import url(https://fonts.googleapis.com/css?family=Lora);
+[class*=' imghvr-'],
+[class^=imghvr-] {
+	font-family: Montserrat, sans-serif;
+	position: relative;
+	display: inline-block;
+	margin: 0;
+	max-width: 140%;
+	
+	color: #666;
+	overflow: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translateZ(0);
+    transform: translateZ(0)
+    
+}
+[class*=' imghvr-'] img,
+[class^=imghvr-] img {
+	vertical-align: top;
+	max-width: 100%
+}
+
+    [class*=' imghvr-'] figcaption,
+    [class^=imghvr-] figcaption {
+        background-image: url("../img/Review/ReviewText1_2.png");
+        padding: 10px;
+        position: absolute;
+        top: 5px;
+        bottom: 5px;
+        left: 5px;
+        right: 5px;
+    }
+
+[class*=' imghvr-'],
+[class*=' imghvr-'] *,
+[class*=' imghvr-']:after,
+[class*=' imghvr-']:before,
+[class*=' imghvr-']:after,
+[class*=' imghvr-']:before,
+[class^=imghvr-],
+[class^=imghvr-] *,
+[class^=imghvr-]:after,
+[class^=imghvr-]:before,
+[class^=imghvr-]:after,
+[class^=imghvr-]:before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all .35s ease;
+	transition: all .35s ease
+}
+
+
+
+.imghvr-blur figcaption {
+	opacity: 0
+}
+
+.imghvr-blur:hover img {
+	-webkit-filter: blur(30px);
+	filter: blur(30px);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+	opacity: 0
+}
+
+.imghvr-blur:hover figcaption {
+	opacity: 1;
+	-webkit-transition-delay: .2s;
+	transition-delay: .2s
+}
+
+
+
+/* div id="rev_2" 리뷰 호버 기능 */
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);@import url(https://fonts.googleapis.com/css?family=Lora);
+[class*=' imghvr2-'],
+[class^=imghvr2-] {
+	font-family: Montserrat, sans-serif;
+	position: relative;
+	display: inline-block;
+	margin: 0;
+	max-width: 140%;
+	
+	color: #666;
+	overflow: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translateZ(0);
+    transform: translateZ(0)
+    
+}
+[class*=' imghvr2-'] img,
+[class^=imghvr2-] img {
+	vertical-align: top;
+	max-width: 100%
+}
+
+    [class*=' imghvr2-'] figcaption,
+    [class^=imghvr2-] figcaption {
+        background-image: url("../img/Review/ReviewText2_2.png");
+        padding: 10px;
+        position: absolute;
+        top: 5px;
+        bottom: 5px;
+        left: 5px;
+        right: 5px;
+    }
+
+[class*=' imghvr2-'],
+[class*=' imghvr2-'] *,
+[class*=' imghvr2-']:after,
+[class*=' imghvr2-']:before,
+[class*=' imghvr2-']:after,
+[class*='imghvr2-']:before,
+[class^=imghvr2-],
+[class^=imghvr2-] *,
+[class^=imghvr2-]:after,
+[class^=imghvr2-]:before,
+[class^=imghvr2-]:after,
+[class^=imghvr2-]:before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all .35s ease;
+	transition: all .35s ease
+}
+
+
+
+.imghvr2-blur figcaption {
+	opacity: 0
+}
+
+.imghvr2-blur:hover img {
+	-webkit-filter: blur(30px);
+	filter: blur(30px);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+	opacity: 0
+}
+
+.imghvr2-blur:hover figcaption {
+	opacity: 1;
+	-webkit-transition-delay: .2s;
+	transition-delay: .2s
+}
+
+/* div id="rev_3" 리뷰 호버 기능 */
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);@import url(https://fonts.googleapis.com/css?family=Lora);
+[class*=' imghvr3-'],
+[class^=imghvr3-] {
+	font-family: Montserrat, sans-serif;
+	position: relative;
+	display: inline-block;
+	margin: 0;
+	max-width: 140%;
+	
+	color: #666;
+	overflow: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translateZ(0);
+    transform: translateZ(0)
+    
+}
+[class*=' imghvr3-'] img,
+[class^=imghvr3-] img {
+	vertical-align: top;
+	max-width: 100%
+}
+
+    [class*=' imghvr3-'] figcaption,
+    [class^=imghvr3-] figcaption {
+        background-image: url("../img/Review/ReviewText3_2.png");
+        padding: 10px;
+        position: absolute;
+        top: 5px;
+        bottom: 5px;
+        left: 5px;
+        right: 5px;
+    }
+
+[class*=' imghvr3-'],
+[class*=' imghvr3-'] *,
+[class*=' imghvr3-']:after,
+[class*=' imghvr3-']:before,
+[class*=' imghvr3-']:after,
+[class*='imghvr3-']:before,
+[class^=imghvr3-],
+[class^=imghvr3-] *,
+[class^=imghvr3-]:after,
+[class^=imghvr3-]:before,
+[class^=imghvr3-]:after,
+[class^=imghvr3-]:before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all .35s ease;
+	transition: all .35s ease
+}
+
+
+
+.imghvr3-blur figcaption {
+	opacity: 0
+}
+
+.imghvr3-blur:hover img {
+	-webkit-filter: blur(30px);
+	filter: blur(30px);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+	opacity: 0
+}
+
+.imghvr3-blur:hover figcaption {
+	opacity: 1;
+	-webkit-transition-delay: .2s;
+	transition-delay: .2s
+}

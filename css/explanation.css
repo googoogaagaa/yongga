@@ -1,0 +1,131 @@
+﻿
+#explanationLi {
+    background-color:#ffffff;
+    overflow: hidden;
+    background-image: url("../img/safe_image.gif");
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+#explanation { 
+   
+    width: 100%;
+    height: 100%;
+    margin: 0;
+   
+    
+   
+}
+
+.container {
+    float: right;
+    width: 100%;
+    height: 100%;
+    
+}
+#container_box {
+    float: right;
+    width: 1608px;
+    height:100%;
+}
+
+
+#firstContainer {
+    width: 1608px;
+    float: left;
+    
+    z-index:-10;
+}
+
+
+.tab-content {
+    transform: translateY(-100%);
+    z-index: 10;
+    float: right;
+}
+.container-img {
+
+    
+    height: 100%;
+    float: right;
+}
+/*화면과 설명 div*/
+
+
+
+
+
+
+.btn_tap {
+    top: 310px;
+    position: relative;
+    float: left;
+    text-align: center;
+    height: 100%;
+    width: 15%;
+    z-index:20;
+    
+   
+}
+.btnbox {
+    background-color: brown;
+    padding-top: 700px;
+    height: 500px;
+    width: 100%;
+   
+}
+
+
+.tap_links {
+    height: 100px;
+    padding-left: 150px;
+    padding-bottom: 135px;
+    outline: none;
+    
+}
+    .tap_links img { }
+
+button {
+
+    border: none;
+    background-color: inherit;
+}
+
+#icon1:hover {
+    content: url('../img/explanation/icon1.png');
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+#icon2:hover {
+    content: url('../img/explanation/icon3.png');
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+#icon3:hover {
+    content: url('../img/explanation/icon5.png');
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.active #icon1 {
+    content: url('../img/explanation/icon1.png');
+}
+
+.active #icon2 {
+    content: url('../img/explanation/icon3.png');
+}
+
+.active #icon3 {
+    content: url('../img/explanation/icon5.png');
+}
+
+
+/*.active #{}*/
